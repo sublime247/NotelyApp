@@ -46,7 +46,7 @@ flutter:
       fonts:
         - asset: fonts/Nunito-Black.ttf
         - asset: fonts/Nunito-BlackItalic.ttf
-        - asset: fonts/Nunito-ExtaBoldItalic.ttf
+        - asset: fonts/Nunito-ExtraBoldItalic.ttf
         - asset: fonts/Nunito-ExtraBold.ttf
         - asset: fonts/Nunito-Medium.ttf
         - asset: fonts/Nunito-Regular.ttf

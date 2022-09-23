@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:notely/screens/create_note.dart';
 import 'package:notely/screens/get_started.dart';
-import 'package:notely/screens/signup_page.dart';
-
 void main() {
   runApp(const Notely());
 }
@@ -12,6 +11,7 @@ class Notely extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Notely',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         backgroundColor:const Color(0xFFF8EEE2),
         scaffoldBackgroundColor: const Color(0xFFF8EEE2),
@@ -19,7 +19,7 @@ class Notely extends StatelessWidget {
       ),
       
       
-      home:  GetStarted(),
+      home: GetStarted()
     );
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FormInputField extends StatelessWidget {
- FormInputField({required this.text, required this.hintText});
+ FormInputField({required this.text, required this.hintText,});
   final String text;
   final String hintText;
   @override
@@ -16,7 +16,7 @@ class FormInputField extends StatelessWidget {
             decoration: InputDecoration(
                 border: InputBorder.none,
                 contentPadding:
-                  const  EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                  const  EdgeInsets.symmetric(vertical: 18, horizontal: 10),
                 filled: true,
                 hintText: hintText,
                 fillColor:const Color(0xFFFFFDFA),

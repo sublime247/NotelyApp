@@ -20,10 +20,16 @@ class GetStarted extends StatelessWidget {
             const SizedBox(
               height: 34,
             ),
-            const Center(child: Text('NOTELY', style: TextStyle(fontFamily: 'Nunito', 
-                     fontSize: 25, fontWeight: FontWeight.w700),)),
+            const Center(
+                child: Text(
+              'NOTELY',
+              style: TextStyle(
+                  fontFamily: 'Nunito',
+                  fontSize: 25,
+                  fontWeight: FontWeight.w700),
+            )),
             const SizedBox(
-              height: 110,
+              height: 50,
             ),
             Expanded(
                 child: PageView(controller: controller, children: const [
@@ -49,8 +55,10 @@ class GetStarted extends StatelessWidget {
               buttontext: 'Get Started',
               secondbutton: 'Already have an account',
               onpressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => SignUpPage()));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SignUpPage()));
               },
             )
           ],
