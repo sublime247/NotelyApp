@@ -1,5 +1,10 @@
 # notely
+A notepad Application that can be used in jotting and as well used in taking notes or Todos.
 
 
-https://user-images.githubusercontent.com/72566175/190803228-3557a117-dc6e-41e1-a0eb-fc8e86d22a05.mp4
+
+
+
+
+https://user-images.githubusercontent.com/72566175/192127287-15052834-8c49-4ffe-ac59-a0c062493aa5.mp4
 
