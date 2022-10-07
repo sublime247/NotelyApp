@@ -33,7 +33,8 @@ class Buttons extends StatelessWidget {
         ),
         TextButton(
             onPressed: onpressed,
-            child: Text(secondbutton,
+            child: Text(
+              secondbutton,
                 style: const TextStyle(
                     color: Color(0xFFD9614C),
                     fontFamily: 'Nunito',

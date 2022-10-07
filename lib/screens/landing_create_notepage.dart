@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:notely/screens/create_note.dart';
-import 'package:notely/screens/notes_created.dart';
 import 'package:notely/screens/profile.dart';
-import 'package:notely/screens/signup_page.dart';
-
+import 'package:notely/service/database.dart';
+import 'package:provider/provider.dart';
 import '../widgets/buttons_widget.dart';
 
 class CreateNoteLandingPage extends StatelessWidget {

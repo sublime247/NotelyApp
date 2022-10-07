@@ -1,5 +1,9 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:notely/screens/authPage.dart';
 import 'package:notely/screens/signup_page.dart';
+import 'package:notely/service/firebase_service_auth.dart';
 import 'package:notely/widgets/buttons_widget.dart';
 import 'package:notely/widgets/onboarding_pages.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -29,10 +33,11 @@ class GetStarted extends StatelessWidget {
                   fontWeight: FontWeight.w700),
             )),
             const SizedBox(
-              height: 50,
+              height: 20,
             ),
             Expanded(
-                child: PageView(controller: controller, children: const [
+                child: 
+                PageView(controller: controller, children: const [
               OnboardingPages(),
               OnboardingPages(),
               OnboardingPages(),
@@ -55,10 +60,10 @@ class GetStarted extends StatelessWidget {
               buttontext: 'Get Started',
               secondbutton: 'Already have an account',
               onpressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const SignUpPage()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  // Firebase.initializeApp();
+                 return   AuthPage();
+                }));
               },
             )
           ],

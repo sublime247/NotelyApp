@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 class FormInputField extends StatelessWidget {
- FormInputField({required this.text, required this.hintText,});
+  const FormInputField({required this.text, required this.hintText, required this.controller});
   final String text;
   final String hintText;
+  final TextEditingController controller;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -13,6 +14,7 @@ class FormInputField extends StatelessWidget {
          fontSize: 16, fontWeight: FontWeight.w500),),
          const  SizedBox(height: 10,),
           TextField(
+            controller:  controller,
             decoration: InputDecoration(
                 border: InputBorder.none,
                 contentPadding:
